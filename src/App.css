@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  background-image: image-set(
+    url(./components/img/bg-header_2020-04-21/bg-header.png) 1x,
+    url(./components/img/bg-header_2020-04-21/bg-header@2x.png) 2x,
+    url(./components/img/bg-header_2020-04-21/bg-header@3x.png) 3x
+  );
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 773px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  height: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.CampK12-Logo {
+  width: 144px;
+  height: 24px;
+  object-fit: contain;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.skill-wrapper {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #71aef3;
+  width: 104px;
+}
+.options {
+  position: relative;
+  top: 150px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.box {
+  height: 200px;
+  background-color: grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+main {
+  position: relative;
+  top: -50px;
+  max-width: 100%;
+  height: 1200px;
+  background-image: linear-gradient(to bottom, #eef9ff -10%, #ade1ff);
+  z-index: -2;
+}
+
+.sec-online {
+  display: absolute;
+  padding-top: 200px;
+}
+
+.opac {
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  section {
+    background-image: linear-gradient(to bottom, #eef9ff -10%, #ade1ff);
   }
-  to {
-    transform: rotate(360deg);
+  .sec-online {
+    padding-top: 1200px;
   }
+  .options {
+    color: black;
+  }
+}
+footer {
+  background-color: blueviolet;
+  z-index: 1;
 }
