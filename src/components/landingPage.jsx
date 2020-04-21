@@ -102,7 +102,7 @@ export default function landingPage() {
         </div>
         <div className="container options">
           <h2 className="display-5 text-center p-4 text-white">
-            What do you eant to learn?
+            What do you want to learn?
           </h2>
 
           <div className="row">
