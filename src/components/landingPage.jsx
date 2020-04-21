@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "./img/logo/camp-k-12-logo.png";
 import logo2x from "./img/logo/camp-k-12-logo@2x.png";
 import logo3x from "./img/logo/camp-k-12-logo@3x.png";
@@ -42,9 +43,15 @@ export default function landingPage() {
             src={logo}
             srcset={`${logo2x} 2x,
              ${logo3x} 3x`}
-            className="CampK12-Logo mr-auto"
+            className="CampK12-Logo"
             alt="camp-k12-logo"
           />
+
+          <Link to="/courses" className="mr-auto">
+            <button className="btn btn-outline-success text-white">
+              Online Courses
+            </button>
+          </Link>
           <img
             src={leaderboard}
             srcset={`${leaderboard2x} 2x,
