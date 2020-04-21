@@ -95,7 +95,7 @@ export default function Card(props) {
             </div>
             <div className="row">
               <div className="col-3">
-                <img src={day} alt="" />
+                <img src={time} alt="" />
               </div>
               <div className="col-9">
                 <p>6:00PM to 7:00PM</p>
@@ -108,7 +108,7 @@ export default function Card(props) {
               </div>
               <div className="col-2"></div>
               <div className="col-4">
-                <p className="text-primary">Enroll</p>
+                <p className="text-primary text-right">Enroll</p>
               </div>
             </div>
           </div>

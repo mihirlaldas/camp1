@@ -8,12 +8,9 @@ header {
     url(./components/img/bg-header_2020-04-21/bg-header@3x.png) 3x
   );
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 773px;
-}
-
-nav {
-  height: 3rem;
 }
 
 .CampK12-Logo {
@@ -22,9 +19,10 @@ nav {
   object-fit: contain;
 }
 .skill-wrapper {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); */
   background-color: #71aef3;
   width: 104px;
+  height: 34px;
 }
 .options {
   position: relative;
@@ -39,16 +37,29 @@ main {
   position: relative;
   top: -50px;
   max-width: 100%;
-  height: 1200px;
+  /* height: 1200px; */
   background-image: linear-gradient(to bottom, #eef9ff -10%, #ade1ff);
-  z-index: -2;
+  z-index: -1;
 }
-
+.rectangle {
+  background-color: #dbf2ff;
+  position: relative;
+  top: -50px;
+}
+.sel-grade {
+  z-index: 4;
+}
 .sec-online {
   display: absolute;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
+#grade-courses {
+  background-color: rgb(230, 224, 224);
+  position: relative;
+  top: -50px;
+  z-index: 1;
+}
 .opac {
   opacity: 0.8;
 }
@@ -62,6 +73,9 @@ main {
   }
   .options {
     color: black;
+  }
+  nav {
+    display: none;
   }
 }
 footer {

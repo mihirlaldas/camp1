@@ -1,22 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import logo from "./img/logo/camp-k-12-logo.png";
-import logo2x from "./img/logo/camp-k-12-logo@2x.png";
-import logo3x from "./img/logo/camp-k-12-logo@3x.png";
-
-import leaderboard from "./img/leaderboard_2020-04-21/leaderboard.png";
-import leaderboard2x from "./img/leaderboard_2020-04-21/leaderboard@2x.png";
-import leaderboard3x from "./img/leaderboard_2020-04-21/leaderboard@3x.png";
-
-import group from "./img/group-36_2020-04-21/group-36.png";
-import group2x from "./img/group-36_2020-04-21/group-36@2x.png";
-import group3x from "./img/group-36_2020-04-21/group-36@3x.png";
-
-import skill from "./img/skill-icon_2020-04-21/skill-icon.png";
-import skill2x from "./img/skill-icon_2020-04-21/skill-icon@2x.png";
-import skill3x from "./img/skill-icon_2020-04-21/skill-icon@3x.png";
-
-import profile from "./img/profile pic.jpg";
+import Navbar from "./common/Navbar";
 
 import headerPhoto from "./img/header-photo_2020-04-21/header-photo.png";
 import headerPhoto2x from "./img/header-photo_2020-04-21/header-photo@2x.png";
@@ -38,96 +21,56 @@ export default function landingPage() {
   return (
     <div>
       <header>
-        <nav className="container d-flex pt-3 ">
-          <img
-            src={logo}
-            srcset={`${logo2x} 2x,
-             ${logo3x} 3x`}
-            className="CampK12-Logo"
-            alt="camp-k12-logo"
-          />
-
-          <Link to="/courses" className="mr-auto">
-            <button className="btn btn-outline-success text-white">
-              Online Courses
-            </button>
-          </Link>
-          <img
-            src={leaderboard}
-            srcset={`${leaderboard2x} 2x,
-             ${leaderboard3x} 3x`}
-            alt="leaderboard"
-            className="mr-1"
-          />
-          <img
-            src={group}
-            srcset={`${group2x} 2x,
-             ${group3x} 3x`}
-            alt="group notification"
-            className="mr-1"
-          />
-          <div className="skill-wrapper  d-flex align-items-center justify-content-between rounded">
-            <img
-              src={skill}
-              srcset={`${skill2x} 2x,
-             ${skill3x} 3x`}
-              alt="skill"
-              className="p-2 img-fluid "
-            />
-            <p className="pt-3 text-white">100</p>
-            <img
-              src={profile}
-              alt="profile"
-              width="33.5px"
-              className="img-fluid rounded"
-            />
-          </div>
-        </nav>
-        {/* showcase headline with pic */}
-        <div className="container d-flex text-white mt-5">
-          <div className="row mt-5">
-            <div className="col-md-8 col-12">
-              <h1 className="display-4">
-                Welcome to the school of the future.
-              </h1>
-              <p className="">
-                Cutting-edge technology courses for Ages 8 - 18.
-                <br /> Unlock 21st century skills, earn , and build <br />
-                acollege-ready portfolio as you learn.
-              </p>
-            </div>
-            <div className="col-md-4 col-12 p-0 m-0">
-              <img
-                src={headerPhoto}
-                srcset={`${headerPhoto2x} 2x,
+        <div className="nav-showcase">
+          <Navbar isLandingPage="true" />
+          <div className="showcase">
+            {/* showcase headline with pic */}
+            <div className="container d-flex text-white mt-3">
+              <div className="row mt-5">
+                <div className="col-md-8 col-12">
+                  <h1 className="display-4">
+                    Welcome to the school of the future.
+                  </h1>
+                  <p className="">
+                    Cutting-edge technology courses for Ages 8 - 18.
+                    <br /> Unlock 21st century skills, earn , and build <br />
+                    acollege-ready portfolio as you learn.
+                  </p>
+                </div>
+                <div className="col-md-4 col-12 p-0 m-0">
+                  <img
+                    src={headerPhoto}
+                    srcset={`${headerPhoto2x} 2x,
              ${headerPhoto3x} 3x`}
-                alt="headerPhoto"
-                className="img-fluid"
-              />
+                    alt="headerPhoto"
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="container options">
-          <h2 className="display-5 text-center p-4 text-white">
-            What do you want to learn?
-          </h2>
+            <div className="container options">
+              <h2 className="display-5 text-center p-4 text-white">
+                What do you want to learn?
+              </h2>
 
-          <div className="row">
-            <div className="col-md-3 col-12">
-              <Box img={webImg} alt="code editor" text="Web Development" />
-            </div>
-            <div className="col-md-3 col-12">
-              <Box
-                img={mobileImg}
-                alt="mobile dev"
-                text="Mobile App Development"
-              />
-            </div>
-            <div className="col-md-3 col-12">
-              <Box img={vr} alt="vr/ar" text="Mixed Reality (AR/VR)" />
-            </div>
-            <div className="col-md-3 col-12">
-              <Box img={ai} alt="ai" text="Machine Learning (AI)" />
+              <div className="row">
+                <div className="col-md-3 col-12">
+                  <Box img={webImg} alt="code editor" text="Web Development" />
+                </div>
+                <div className="col-md-3 col-12">
+                  <Box
+                    img={mobileImg}
+                    alt="mobile dev"
+                    text="Mobile App Development"
+                  />
+                </div>
+                <div className="col-md-3 col-12">
+                  <Box img={vr} alt="vr/ar" text="Mixed Reality (AR/VR)" />
+                </div>
+                <div className="col-md-3 col-12">
+                  <Box img={ai} alt="ai" text="Machine Learning (AI)" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
