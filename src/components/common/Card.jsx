@@ -12,13 +12,16 @@ import time from "../img/boxes/time.png";
 export default function Card(props) {
   return (
     <div>
-      <div className="card" style={{ width: "300px" }}>
-        <img
-          src={props.img}
-          alt={props.alt}
-          className="card-img-top"
-          height="200px"
-        />
+      <div className="card my-2" style={{ width: "300px" }}>
+        <div className="card-header">
+          <img
+            src={props.img}
+            alt={props.alt}
+            className="card-img-top"
+            height="200px"
+          />
+          <span className="badge badge-pill badge-dark tag">{props.tag}</span>
+        </div>
         <div className="card-body">
           <h5 className="card-title" style={{ height: "2rem" }}>
             {props.title}
@@ -56,10 +59,10 @@ export default function Card(props) {
               <div className="col-3">
                 <span className="badge badge-light p-2">{props.tag1}</span>
               </div>
-              <div className="col-3">
+              <div className="col-4">
                 <span className="badge badge-light p-2">{props.tag2}</span>
               </div>
-              <div className="col-3">
+              <div className="col-2">
                 <span className="badge badge-light p-2">{props.tag3}</span>
               </div>
             </div>

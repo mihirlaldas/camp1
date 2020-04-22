@@ -48,28 +48,34 @@ export default function landingPage() {
                 </div>
               </div>
             </div>
-            <div className="container options">
+            <div className="container-fluid options">
               <h2 className="display-5 text-center p-4 text-white">
                 What do you want to learn?
               </h2>
 
               <div className="row">
-                <div className="col-md-3 col-12">
+                <button className=" btn col-md-2 d-none d-md-block align-self-center text-center">
+                  <span className="arrow">&larr;</span>
+                </button>
+                <div className="col-md-2 col-12 my-2-sm">
                   <Box img={webImg} alt="code editor" text="Web Development" />
                 </div>
-                <div className="col-md-3 col-12">
+                <div className="col-md-2 col-12 my-2-sm">
                   <Box
                     img={mobileImg}
                     alt="mobile dev"
                     text="Mobile App Development"
                   />
                 </div>
-                <div className="col-md-3 col-12">
+                <div className="col-md-2 col-12 my-2-sm">
                   <Box img={vr} alt="vr/ar" text="Mixed Reality (AR/VR)" />
                 </div>
-                <div className="col-md-3 col-12">
+                <div className="col-md-2 col-12 my-2-sm">
                   <Box img={ai} alt="ai" text="Machine Learning (AI)" />
                 </div>
+                <button className=" btn col-md-2 d-none d-md-block align-self-center text-center">
+                  <span className="arrow">&rarr;</span>
+                </button>
               </div>
             </div>
           </div>
@@ -85,7 +91,7 @@ export default function landingPage() {
             Learn from live teachers, not pre-recorded videos, in our
             intelligent virtual classrooms.
           </p>
-          <p className="opac">
+          <p className="opac pb-5">
             <img src={shield} alt="shield" /> = 21st century skills you’ll
             unlock &nbsp; &nbsp; &nbsp;
             <img src={coins} alt="coins" /> = coins you’ll earn for completion
@@ -98,6 +104,7 @@ export default function landingPage() {
               title="Android App Development Level1"
               grades="4-8"
               prereq="Yes"
+              tag="MOBILE APPS"
               tag1="Android"
               tag2="UI/UX"
               tag3="+4"
@@ -107,17 +114,19 @@ export default function landingPage() {
               title="Web Development Level1"
               grades="4-12"
               prereq="Yes"
-              tag1="Android"
-              tag2="UI/UX"
-              tag3="+4"
+              tag="WEB DEVELOPMENT"
+              tag1="HTML"
+              tag2="CSS"
+              tag3="+1"
             />
             <Card
               img="https://s.clipartkey.com/mpngs/s/300-3001409_graphic-ar-vr-game-development-ar-vr-technology.png"
               title="Virtual Reality Level1"
               grades="5-12"
               prereq="No"
-              tag1="Android"
-              tag2="UI/UX"
+              tag="MIXED REALITY"
+              tag1="VR"
+              tag2="JAVASCRIPT"
               tag3="+4"
             />
           </div>

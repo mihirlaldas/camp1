@@ -18,6 +18,19 @@ header {
   height: 24px;
   object-fit: contain;
 }
+.notification {
+  position: relative;
+  display: inline-block;
+}
+.notification .notify-badge {
+  position: absolute;
+  top: -10px;
+  left: 25px;
+  border-radius: 50%;
+  background-color: red;
+  padding: 2px 5px;
+  font-size: 0.8rem;
+}
 .skill-wrapper {
   /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); */
   background-color: #71aef3;
@@ -41,6 +54,23 @@ main {
   background-image: linear-gradient(to bottom, #eef9ff -10%, #ade1ff);
   z-index: -1;
 }
+.card-header {
+  position: relative;
+}
+.arrow {
+  background-color: white;
+  color: blueviolet;
+  border-radius: 10%;
+  font-size: 2rem;
+}
+.tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 5px;
+
+  opacity: 0.4;
+}
 .rectangle {
   background-color: #dbf2ff;
   position: relative;
@@ -49,6 +79,11 @@ main {
 .sel-grade {
   z-index: 4;
 }
+.grade-pos {
+  position: absolute;
+  top: -20px;
+}
+
 .sec-online {
   display: absolute;
   padding-top: 150px;
@@ -63,22 +98,28 @@ main {
 .opac {
   opacity: 0.8;
 }
+.box2 {
+  color: white;
+}
 
 @media (max-width: 600px) {
+  header {
+    height: auto;
+  }
   section {
     background-image: linear-gradient(to bottom, #eef9ff -10%, #ade1ff);
   }
-  .sec-online {
-    padding-top: 1200px;
-  }
+
   .options {
     color: black;
-  }
-  nav {
-    display: none;
+    top: 0px;
   }
 }
 footer {
   background-color: blueviolet;
   z-index: 1;
+}
+
+.wrapper {
+  position: relative;
 }

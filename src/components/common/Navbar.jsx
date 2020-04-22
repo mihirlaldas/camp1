@@ -71,15 +71,18 @@ export default function Navbar(props) {
                 srcset={`${leaderboard2x} 2x,
              ${leaderboard3x} 3x`}
                 alt="leaderboard"
-                className="mr-1"
+                className="mr-3"
               />
-              <img
-                src={group}
-                srcset={`${group2x} 2x,
+              <div className="notification">
+                <img
+                  src={group}
+                  srcset={`${group2x} 2x,
              ${group3x} 3x`}
-                alt="group notification"
-                className="mr-1"
-              />
+                  alt="group notification"
+                  className="mr-3"
+                />
+                <span className="notify-badge">2</span>
+              </div>
               <div className="skill-wrapper  d-flex align-items-center justify-content-between rounded py-0">
                 <img
                   src={skill}
@@ -96,6 +99,7 @@ export default function Navbar(props) {
                   className="img-fluid rounded"
                 />
               </div>
+              <p className="px-2 font-weight-bold">&#8964;</p>
             </form>
           ) : (
             <form className="form-inline my-2 my-lg-0">
